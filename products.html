@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Solo's cheapest winter closet we supply at affordable prices and we are located in Chinhoyi, Harare and Chivhu.">
+    <meta name="keywords" content="socks,jacket,gloves,sweater,scarf,shoes">
+    <meta name="author" content="Fredrick Muzembe">
+    <title>THE CLOSET| Products</title>
+    <link rel="stylesheet" href="./css/stylee.css">
+</head>
+
+<body style="background-color:white">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">THE WINTER CLOSET</span> Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="current"><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="checkout.html">CHECKOUT</a></li>
+                    <li><a href="contact us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Socks">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form action="includes/insert.php" method="post">
+                <input id="email" type="email" placeholder="Enter Email..." required>
+                <button type="submit" class="button_1">Subscribe</button>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <h3>socks</h3>
+                <img src="images/socks.jpg" alt="Socks" style="width:120px;height:12opx">
+                <p>
+                    <tt>Price: </tt><b>$1</b>
+                </p>
+            </div>
+            <form align="left">
+                Quantity : <input type="text" id="bottom1" /><br><br> Cost : <b>$</b><input type="text" id="cost1" /><br><br>
+                <input type="button" onClick="add()" Value="Calculate" /><br>
+            </form>
+
+            <script type="text/javascript">
+                var amount = 0;
+
+                function add() {
+                    num1 = document.getElementById("bottom1").value;
+                    num2 = num1 * 1;
+                    document.getElementById("cost1").value = num2;
+                    amount = amount + num2;
+                    document.getElementById("total_amount").value = amount;
+                }
+            </script>
+            <h2>Gloves</h2>
+
+            <img src="images/gloves.jpeg" alt="gloves" style="width:120px;height:12opx">
+            <p>
+                <tt>Price: </tt><b>$2</b>
+            </p>
+        </div>
+        <form align="left">
+            Quantity : <input type="text" id="gloves" /><br><br> Cost : <b>$</b><input type="text" id="cost3" /><br><br>
+            <input type="button" onClick="add2()" Value="Calculate" /><br>
+        </form>
+
+        <script type="text/javascript">
+            function add2() {
+                num1 = document.getElementById("gloves").value;
+                num2 = num1 * 2;
+                document.getElementById("cost3").value = num2;
+                amount = amount + num2;
+                document.getElementById("total_amount").value = amount;
+            }
+        </script>
+        <div class="box">
+            <h3>Sweater</h3>
+            <img src="images/sweater.jpg" alt="sweater" style="width:120px;height:12opx">
+            <p>
+                <tt>Price: </tt><b>$5</b>
+            </p>
+            <form align="left">
+                Quantity : <input type="text" id="sweater1" /><br><br> Cost : <b>$</b><input type="text" id="cost4" /><br><br>
+                <input type="button" onClick="add3()" Value="Calculate" /><br><br>
+            </form>
+            <script type="text/javascript">
+                function add3() {
+                    num1 = document.getElementById("sweater1").value;
+                    num2 = num1 * 5;
+                    document.getElementById("cost4").value = num2;
+                    amount = amount + num2;
+                    document.getElementById("total_amount").value = amount;
+                }
+            </script>
+            <h3>Sweater 2</h3>
+
+            <img src="images/sweater (2).jpg" alt="sweater 2" style="width:120px;height:12opx">
+            <p>
+                <tt>Price: </tt><b>$4</b>
+            </p>
+        </div>
+        <form align="left">
+            Quantity : <input type="text" id="sweater2" /><br><br> Cost : <b>$</b><input type="text" id="cost5" /><br><br>
+            <input type="button" onClick="add4()" Value="Calculate" /><br>
+        </form>
+        <script type="text/javascript">
+            function add4() {
+                num1 = document.getElementById("sweater2").value;
+                num2 = num1 * 4;
+                document.getElementById("cost5").value = num2;
+                amount = amount + num2;
+                document.getElementById("total_amount").value = amount;
+            }
+        </script>
+
+        <div class="box">
+            <h4>Dark Jacket</h4>
+            <img src="images/jacket.jpg" alt="jacket" style="width:190px;height:180px">
+            <p>
+                <tt>Price: </tt><b>$10</b>
+            </p>
+        </div>
+        <form align="left">
+            Quantity : <input type="text" id="jacket1" /><br><br> Cost : <b>$</b><input type="text" id="cost6" /><br><br>
+            <input type="button" onClick="add5()" Value="Calculate" /><br>
+        </form>
+
+        <script type="text/javascript">
+            function add5() {
+                num1 = document.getElementById("jacket1").value;
+                num2 = num1 * 10;
+                document.getElementById("cost6").value = num2;
+                amount = amount + num2;
+                document.getElementById("total_amount").value = amount;
+            }
+        </script>
+
+        <div class="box">
+            <h3>scarf</h3>
+            <img src="images/scarf.jpg" alt="scarf" style="width:120px;height:12opx">
+            <p>
+                <tt>Price: </tt><b>$2</b>
+            </p>
+        </div>
+        <form align="left">
+            Quantity : <input type="text" id="scarf1" /><br><br> Cost : <b>$</b><input type="text" id="cost7" /><br><br>
+            <input type="button" onClick="add6()" Value="Calculate" /><br>
+        </form>
+
+        <script type="text/javascript">
+            function add6() {
+                num1 = document.getElementById("scarf1").value;
+                num2 = num1 * 2;
+                document.getElementById("cost7").value = num2;
+                amount = amount + num2;
+                document.getElementById("total_amount").value = amount;
+
+            }
+        </script>
+        <div class="box">
+            <h2>Winter Shoe</h2>
+            <img src="images/shoe.jpg" alt="Shoe" style="width:120px;height:12opx">
+            <p>
+                <tt>Price: </tt><b>$12</b>
+            </p>
+            <form align="left">
+                Quantity : <input type="text" id="shoe1" /><br><br> Cost : <b>$</b><input type="text" id="cost8" /><br><br>
+                <input type="button" onClick="add7()" Value="Calculate" /><br>
+            </form>
+
+            <script type="text/javascript">
+                function add7() {
+                    num1 = document.getElementById("shoe1").value;
+                    num2 = num1 * 12;
+                    document.getElementById("cost8").value = num2;
+                    amount = amount + num2;
+                    document.getElementById("total_amount").value = amount;
+                }
+            </script>
+        </div>
+        <hr />
+        <b>Total Amount</b>= <b>$</b><input id="total_amount" type="text" /><br><br>
+        <script type="text/javascript">
+            document.getElementById("total_amount").value = amount;
+        </script>
+        <a href="checkout.html"><b>Proceed to checkout</b></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>THE CLOSET, Copyright &copy; 2022</p>
+    </footer>
+</body>
